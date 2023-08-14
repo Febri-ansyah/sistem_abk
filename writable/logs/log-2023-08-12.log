@@ -1,0 +1,387 @@
+CRITICAL - 2023-08-12 07:05:36 --> Call to undefined function base_ur()
+in APPPATH\Views\template\sidebar.php on line 47.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('template/sidebar', null, true)
+ 4 APPPATH\Views\template\main.php(22): CodeIgniter\View\View->include('template/sidebar')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\template\\main.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('template/main', [], true)
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pages/home', [], true)
+ 9 APPPATH\Controllers\Home.php(10): view('pages/home')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 08:15:41 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Admin.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\ProgramMe\\project0\\app\\Controllers\\admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 08:15:44 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Admin.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\ProgramMe\\project0\\app\\Controllers\\admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 08:17:49 --> Undefined variable $data
+in APPPATH\Views\admin\karakter.php on line 44.
+ 1 APPPATH\Views\admin\karakter.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\ProgramMe\\project0\\app\\Views\\admin\\karakter.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\admin\\karakter.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/karakter', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('admin/karakter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->karakter()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 08:20:31 --> Undefined array key "gejala_karakter"
+in APPPATH\Views\admin\karakter.php on line 48.
+ 1 APPPATH\Views\admin\karakter.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gejala_karakter"', 'C:\\ProgramMe\\project0\\app\\Views\\admin\\karakter.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\admin\\karakter.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/karakter', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('admin/karakter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->karakter()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 17:42:33 --> Class "App\Controllers\KarakterModel" not found
+in APPPATH\Controllers\Admin.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 17:43:25 --> Call to undefined function App\Controllers\App\Models\KarakterModel()
+in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 17:43:53 --> Class "App\Controllers\App\Models\KarakterModel" not found
+in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 17:44:04 --> syntax error, unexpected token "use"
+in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\ProgramMe\\project0\\app\\Controllers\\BaseController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BaseController')
+ 3 APPPATH\Controllers\Admin.php(5): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BaseController')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(314): include_once('C:\\ProgramMe\\project0\\app\\Controllers\\Admin.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\ProgramMe\\project0\\app\\Controllers\\admin.php')
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin')
+ 7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin')
+ 8 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\admin', true)
+ 9 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 17:47:29 --> Call to undefined function App\Models\KarakterModel()
+in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 17:55:34 --> Undefined variable $jenis
+in APPPATH\Views\admin\jenis.php on line 45.
+ 1 APPPATH\Views\admin\jenis.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenis', 'C:\\ProgramMe\\project0\\app\\Views\\admin\\jenis.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\admin\\jenis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/jenis', [], true)
+ 5 APPPATH\Controllers\Admin.php(28): view('admin/jenis')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->jenis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 17:55:55 --> Undefined array key "karakteristik_karakter"
+in APPPATH\Views\admin\jenis.php on line 49.
+ 1 APPPATH\Views\admin\jenis.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "karakteristik_karakter"', 'C:\\ProgramMe\\project0\\app\\Views\\admin\\jenis.php', 49)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\admin\\jenis.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/jenis', [], true)
+ 5 APPPATH\Controllers\Admin.php(28): view('admin/jenis', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->jenis()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 18:02:10 --> Invalid file: "admin/rules.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/rules.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/rules', [], true)
+ 3 APPPATH\Controllers\Admin.php(33): view('admin/rules')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->rules()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 18:10:05 --> Undefined variable $data
+in APPPATH\Views\template\main.php on line 1.
+ 1 APPPATH\Views\template\main.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\ProgramMe\\project0\\app\\Views\\template\\main.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\template\\main.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('template/main', [], true)
+ 5 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/jenis', [], true)
+ 6 APPPATH\Controllers\Admin.php(24): view('admin/jenis', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->jenis()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 18:13:26 --> Undefined variable $title
+in APPPATH\Views\template\main.php on line 6.
+ 1 APPPATH\Views\template\main.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\ProgramMe\\project0\\app\\Views\\template\\main.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\template\\main.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('template/main', [], true)
+ 5 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pages/home', [], true)
+ 6 APPPATH\Controllers\Home.php(10): view('pages/home')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 18:15:10 --> Undefined variable $title
+in APPPATH\Views\template\main.php on line 10.
+ 1 APPPATH\Views\template\main.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\ProgramMe\\project0\\app\\Views\\template\\main.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\template\\main.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('template/main', [], true)
+ 5 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pages/home', [], true)
+ 6 APPPATH\Controllers\Home.php(10): view('pages/home')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 18:28:41 --> Invalid file: "admin/user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/user.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/user', [], true)
+ 3 APPPATH\Controllers\Admin.php(34): view('admin/user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->akun()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 18:58:30 --> Invalid file: "admin::karakter.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin::karakter.php')
+ 2 SYSTEMPATH\Router\RouteCollection.php(1018): CodeIgniter\View\View->render('admin::karakter', null)
+ 3 SYSTEMPATH\CodeIgniter.php(881): CodeIgniter\Router\RouteCollection::CodeIgniter\Router\{closure}()
+ 4 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 18:59:23 --> Undefined variable $karakter
+in APPPATH\Views\admin\karakter.php on line 46.
+ 1 APPPATH\Views\admin\karakter.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $karakter', 'C:\\ProgramMe\\project0\\app\\Views\\admin\\karakter.php', 46)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\admin\\karakter.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Router\RouteCollection.php(1018): CodeIgniter\View\View->render('/admin/karakter', null)
+ 5 SYSTEMPATH\CodeIgniter.php(881): CodeIgniter\Router\RouteCollection::CodeIgniter\Router\{closure}()
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 18:59:45 --> Invalid file: "Home::index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home::index.php')
+ 2 SYSTEMPATH\Router\RouteCollection.php(1018): CodeIgniter\View\View->render('Home::index', null)
+ 3 SYSTEMPATH\CodeIgniter.php(881): CodeIgniter\Router\RouteCollection::CodeIgniter\Router\{closure}()
+ 4 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 19:55:41 --> Too few arguments to function CodeIgniter\Router\RouteCollection::view(), 1 passed in C:\ProgramMe\project0\app\Config\Routes.php on line 39 and at least 2 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 1014.
+ 1 APPPATH\Config\Routes.php(39): CodeIgniter\Router\RouteCollection->view('/karakter/add')
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('C:\\ProgramMe\\project0\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 19:56:04 --> Invalid file: "karakter/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karakter/add.php')
+ 2 SYSTEMPATH\Router\RouteCollection.php(1018): CodeIgniter\View\View->render('karakter/add', null)
+ 3 SYSTEMPATH\CodeIgniter.php(881): CodeIgniter\Router\RouteCollection::CodeIgniter\Router\{closure}()
+ 4 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 19:57:56 --> Too few arguments to function App\Controllers\Karakter::save(), 0 passed in C:\ProgramMe\project0\vendor\codeigniter4\framework\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\Karakter.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 19:59:03 --> Call to undefined method App\Controllers\Karakter::getVar()
+in APPPATH\Controllers\Karakter.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:01:22 --> Call to undefined method App\Controllers\Karakter::getVar()
+in APPPATH\Controllers\Karakter.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:01:30 --> Call to undefined method App\Controllers\Karakter::getVar()
+in APPPATH\Controllers\Karakter.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:01:45 --> Call to undefined method App\Controllers\Karakter::getVar()
+in APPPATH\Controllers\Karakter.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:04:25 --> Undefined variable $request
+in APPPATH\Controllers\Karakter.php on line 13.
+ 1 APPPATH\Controllers\Karakter.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\ProgramMe\\project0\\app\\Controllers\\Karakter.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:05:39 --> Undefined variable $request
+in APPPATH\Controllers\Karakter.php on line 13.
+ 1 APPPATH\Controllers\Karakter.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\ProgramMe\\project0\\app\\Controllers\\Karakter.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:05:51 --> Undefined variable $request
+in APPPATH\Controllers\Karakter.php on line 13.
+ 1 APPPATH\Controllers\Karakter.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\ProgramMe\\project0\\app\\Controllers\\Karakter.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:06:49 --> Call to undefined function App\Controllers\getVar()
+in APPPATH\Controllers\Karakter.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:07:06 --> Call to undefined function App\Controllers\getVar()
+in APPPATH\Controllers\Karakter.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:07:55 --> Call to undefined function App\Controllers\getVar()
+in APPPATH\Controllers\Karakter.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:08:12 --> Call to undefined function App\Controllers\getPost()
+in APPPATH\Controllers\Karakter.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:09:28 --> Call to undefined function App\Controllers\getMethod()
+in APPPATH\Controllers\Karakter.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:09:51 --> Call to undefined function App\Controllers\getMethod()
+in APPPATH\Controllers\Karakter.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:11:01 --> Undefined variable $request
+in APPPATH\Controllers\Karakter.php on line 13.
+ 1 APPPATH\Controllers\Karakter.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\ProgramMe\\project0\\app\\Controllers\\Karakter.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Karakter->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:17:17 --> Allowed fields must be specified for model: "App\Models\KarakterModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\KarakterModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Karakter.php(15): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Karakter->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karakter))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-12 20:32:39 --> Call to undefined function sesion()
+in APPPATH\Views\admin\karakter\view.php on line 34.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/karakter/view', [], true)
+ 4 APPPATH\Controllers\Admin.php(14): view('admin/karakter/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->karakter()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+INFO - 2023-08-12 20:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-12 20:33:19 --> Call to undefined function sesion()
+in APPPATH\Views\admin\karakter\view.php on line 36.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/karakter/view', [], true)
+ 4 APPPATH\Controllers\Admin.php(14): view('admin/karakter/view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->karakter()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+INFO - 2023-08-12 20:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-12 20:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

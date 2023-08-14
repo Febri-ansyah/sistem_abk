@@ -1,0 +1,22 @@
+CRITICAL - 2023-08-11 08:10:23 --> Undefined property: CodeIgniter\View\View::$endSection
+in APPPATH\Views\pages\home.php on line 1294.
+ 1 APPPATH\Views\pages\home.php(1294): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$endSection', 'C:\\ProgramMe\\project0\\app\\Views\\pages\\home.php', 1294)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\ProgramMe\\project0\\app\\Views\\pages\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('pages/home', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('pages/home')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')
+CRITICAL - 2023-08-11 21:49:22 --> Invalid file: "admin/karakter.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/karakter.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('admin/karakter', [], true)
+ 3 APPPATH\Controllers\Admin.php(10): view('admin/karakter')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->karakter()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\ProgramMe\\project0\\public\\index.php')

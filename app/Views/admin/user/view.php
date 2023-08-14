@@ -8,7 +8,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Jenis Jenis ABK</h1>
+            <h1 class="m-0 text-dark">Kelola Rule</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -27,7 +27,7 @@
         <!-- Main row -->
         <div class="card pt-3">
           <div class="card-title ml-auto mr-3">
-            <a class="btn btn-dark" href="<?= base_url();?>user/add" role="button">Tambah</a>
+            <a class="btn btn-dark" href="<?= base_url();?>akun/add" role="button">Tambah</a>
             <a class="mx-3" href="<?= base_url();?>" style="color:black">Back</a>
           </div>
           <div class="card-body">
@@ -53,10 +53,10 @@
                     <td>Guest</td>
                   <?php endif ?>
                   <td>
-                    <a class="mr-2" href="<?= base_url();?>edit/user/<?= $u['id_user'];?>" role="button">
+                    <a class="mr-2" href="<?= base_url();?>edit/akun/<?= $u['id_user'];?>" role="button">
                       <i class="fa-solid fa-pencil fa-lg" style="color: #212529;"></i>
                     </a>
-                    <a class="ml-2" href="<?= base_url();?>delete/user/<?= $u['id_user'];?>" role="button">
+                    <a class="ml-2" href="<?= base_url();?>delete/akun/<?= $u['id_user'];?>" role="button">
                       <i class="fa-solid fa-trash fa-lg" style="color: #212529;"></i>
                     </a>
                   </td>
