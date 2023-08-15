@@ -36,6 +36,7 @@
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">User ID</th>
+                  <th scope="col">Email</th>
                   <th scope="col">Level</th>
                   <th scope="col">Action</th>
                 </tr>
@@ -45,7 +46,8 @@
                 <?php foreach ($user as $u):?>
                 <tr>
                   <th scope="row"><?= ++$i;?></th>
-                  <td><?= $u['id_user'];?></td>
+                  <td><?= $u['nama_user'];?></td>
+                  <td><?= $u['email_user'];?></td>
                   <?php if($u['level_user']=='1'): ?>
                     <td>Administrator</td>
                   <?php endif ?>

@@ -14,7 +14,7 @@
 				<ol class="breadcrumb float-sm-right">
 					<li class="breadcrumb-item"><a href="<?= base_url();?>">Home</a></li>
 					<li class="breadcrumb-item"><a href="<?= base_url();?>admin/user">User</a></li>
-					<li class="breadcrumb-item active">Tambah</li>
+					<li class="breadcrumb-item active">Edit</li>
 				</ol>
 				</div><!-- /.col -->
 			</div><!-- /.row -->
@@ -25,6 +25,7 @@
 	<!-- Main content -->
 	<form action="<?= base_url();?>user/save" method="POST">
 		<?= csrf_field();?>
+		<input type="text" name="id_user" readonly value="<?= $user['id_user'];?>" style="visibility: hidden;">
 		<section class="content bg-light">
 			<div class="container">
 				<!-- Main row -->
@@ -35,9 +36,15 @@
 					</div>
 					<div class="card-body">
 						<div class="mb-3 row">
-							<label for="staticEmail" class="col-sm-2 col-form-label">User ID</label>
+							<label for="staticEmail" class="col-sm-2 col-form-label">Nama User</label>
 							<div class="col-sm-10">
-								<input autocomplete="off" type="text" class="form-control" name="id_user" value="<?= $user['id_user'];?>">
+								<input autocomplete="off" type="text" class="form-control" name="nama_user" value="<?= $user['nama_user'];?>">
+							</div>
+						</div>
+						<div class="mb-3 row">
+							<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+							<div class="col-sm-10">
+								<input autocomplete="off" type="text" class="form-control" name="email_user" value="<?= $user['email_user'];?>">
 							</div>
 						</div>
 						<div class="mb-3 row">

@@ -35,9 +35,15 @@
 					</div>
 					<div class="card-body">
 						<div class="mb-3 row">
-							<label for="staticEmail" class="col-sm-2 col-form-label">User ID</label>
+							<label for="staticEmail" class="col-sm-2 col-form-label">Nama Lengkap</label>
 							<div class="col-sm-10">
-								<input autocomplete="off" type="text" class="form-control" name="id_user">
+								<input autocomplete="off" type="text" class="form-control" name="nama_user" required>
+							</div>
+						</div>
+						<div class="mb-3 row">
+							<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+							<div class="col-sm-10">
+								<input autocomplete="off" type="text" class="form-control" name="email_user">
 							</div>
 						</div>
 						<div class="mb-3 row">

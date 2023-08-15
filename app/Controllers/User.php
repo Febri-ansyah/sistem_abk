@@ -7,12 +7,15 @@ class User extends BaseController
 	
 	public function save()
 	{
+
 		$data = [
 			'id_user' => $this->request->getVar('id_user'),
+			'nama_user' => $this->request->getVar('nama_user'),
+			'email_user' => $this->request->getVar('email_user'),
 			'password_user' => $this->request->getVar('password_user'),
 			'level_user' => $this->request->getVar('level_user')
 		];
-
+		
 		($this -> UserModel -> getData($data['id_user'])) ? 
 			$this -> UserModel -> save($data) :
 			$this -> UserModel -> insert($data);

@@ -32,6 +32,8 @@ $routes->setAutoRoute(true);
 
 // --SHOW
 $routes->view('/', 'home');
+$routes->view('/login', 'login');
+$routes->view('/register', 'register');
 
 $routes->get('/admin/karakter', 'admin::karakter');
 $routes->get('/admin/jenis', 'admin::jenis');
