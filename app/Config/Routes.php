@@ -43,9 +43,11 @@ $routes->view('/akun/add', 'admin/user/add');
 
 $routes->get('/delete/karakter/(:any)', 'karakter::delete/$1');
 $routes->get('/delete/jenis/(:any)', 'jenis::delete/$1');
+$routes->get('/delete/akun/(:any)', 'user::delete/$1');
 
 $routes->get('/edit/karakter/(:any)', 'karakter::edit/$1');
 $routes->get('/edit/jenis/(:any)', 'jenis::edit/$1');
+$routes->get('/edit/akun/(:any)', 'user::edit/$1');
 
 /*
  * --------------------------------------------------------------------
