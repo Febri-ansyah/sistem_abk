@@ -6,14 +6,26 @@
 				<a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
 			</li>
 		</ul>
+		<?php if(!session()->has('status')): ?>
+		<ul class="navbar-nav ml-auto">
+      <li class="nav-item mr-2">
+      	<a class="nav-link" href='<?= base_url();?>login'>
+      		<i class="fa-solid fa-right-from-bracket" style="margin-top: 0.1px;"></i>
+      		Login
+      	</a>
+      </li>
+    </ul>
+  	<?php endif; ?>
+		<?php if(session()->has('status')): ?>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item mr-2">
-      	<a class="nav-link" href='#'>
+      	<a class="nav-link" href='<?= base_url();?>logout'>
       		<i class="fa-solid fa-right-from-bracket" style="margin-top: 0.1px;"></i>
       		Logout
       	</a>
       </li>
     </ul>
+  	<?php endif; ?>
 	</nav>
 	<!-- /.navbar -->
 
@@ -28,7 +40,12 @@
 					<img src="<?= base_url();?>dist/img/brand.png" alt="brand">
 				</div>
 				<div class="info">
-					<a href="#" class="d-block h4">Hallo, Admin</a>
+					<?php if(session()->has('nama')): ?>
+					<a href="#" class="d-block h4">Hallo, <?= session()->get('nama');?></a>
+  				<?php endif; ?>
+  				<?php if(!session()->has('nama')): ?>
+					<a href="#" class="d-block h4">Hallo, Guest</a>
+  				<?php endif; ?>
 				</div>
 			</div>
 			<nav class="mt-2">
@@ -41,6 +58,8 @@
 							</p>
 						</a>
 					</li>
+
+					<?php if(session()->has('level')): ?>
 					<!-- for admin -->
 					<li class="nav-header">MENU ADMIN</li>				
 					<li class="nav-item">
@@ -68,6 +87,7 @@
 						</a>
 					</li>
 					<!-- /endAdmin -->
+					<?php endif; ?>
 				</ul>				
 			</nav>
 			<!-- /.sidebar-menu -->

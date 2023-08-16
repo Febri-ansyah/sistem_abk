@@ -34,14 +34,15 @@ $routes->setAutoRoute(true);
 $routes->view('/', 'home');
 $routes->view('/login', 'login');
 $routes->view('/register', 'register');
+$routes->get('/logout', 'logout::logout');
 
 $routes->get('/admin/karakter', 'admin::karakter');
 $routes->get('/admin/jenis', 'admin::jenis');
 $routes->get('/admin/akun', 'admin::akun');
 
-$routes->view('/karakter/add', 'admin/karakter/add');
-$routes->view('/jenis/add', 'admin/jenis/add');
-$routes->view('/akun/add', 'admin/user/add');
+$routes->get('/karakter/add', 'karakter::add');
+$routes->get('/jenis/add', 'jenis::add');
+$routes->get('/akun/add', 'user::add');
 
 $routes->get('/delete/karakter/(:any)', 'karakter::delete/$1');
 $routes->get('/delete/jenis/(:any)', 'jenis::delete/$1');

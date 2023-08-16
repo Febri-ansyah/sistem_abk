@@ -7,6 +7,8 @@ class Jenis extends BaseController
 	
 	public function save()
 	{
+		if($this->request->getVar()==[]) return redirect()->to(base_url().'Admin/Jenis');
+
 		$data = [
 			'kode_jenis' => $this->request->getVar('kode_jenis'),
 			'nama_jenis' => $this->request->getVar('nama_jenis')
@@ -17,7 +19,7 @@ class Jenis extends BaseController
 			$this->JenisModel->insert($data);
 
 		session()->setFlashdata('pesan', ' Data Berhasil Diperbaharui');
-		return redirect()->to('Admin/jenis');
+		return redirect()->to(base_url().'Admin/Jenis');
 	}
 
 	public function delete($id)
@@ -26,7 +28,7 @@ class Jenis extends BaseController
 		$this->JenisModel->delete(['kode_jenis'=>$id]);
 
 		session()->setFlashdata('pesan', ' Data Berhasil Dihapus');
-		return redirect()->to('Admin/jenis');
+		return redirect()->to('Admin/Jenis');
 	}
 
 	public function edit($id)
@@ -36,6 +38,12 @@ class Jenis extends BaseController
             'jenis' => $this->JenisModel->getData($id)
         ];
 
-		return view('admin/jenis/edit', $data);
+		return view('Admin/Jenis/edit', $data);
+	}
+
+	public function add()
+	{
+		if(!session()->has('status')) return redirect()->to(base_url().'login');
+		return view('jenis/add');
 	}
 }
