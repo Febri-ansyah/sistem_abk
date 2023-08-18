@@ -10,7 +10,7 @@
 		<ul class="navbar-nav ml-auto">
       <li class="nav-item mr-2">
       	<a class="nav-link" href='<?= base_url();?>login'>
-      		<i class="fa-solid fa-right-from-bracket" style="margin-top: 0.1px;"></i>
+      		<i class="fa-solid fa-arrow-right-to-bracket" style="margin-top: 0.1px;"></i>
       		Login
       	</a>
       </li>
@@ -41,10 +41,10 @@
 				</div>
 				<div class="info">
 					<?php if(session()->has('nama')): ?>
-					<a href="#" class="d-block h4">Hallo, <?= session()->get('nama');?></a>
+					<a href="#" class="d-block h5">Hallo, <?= session()->get('nama');?></a>
   				<?php endif; ?>
   				<?php if(!session()->has('nama')): ?>
-					<a href="#" class="d-block h4">Hallo, Guest</a>
+					<a href="#" class="d-block h5">Hallo, Guest</a>
   				<?php endif; ?>
 				</div>
 			</div>

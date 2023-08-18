@@ -64,6 +64,6 @@ class User extends BaseController
 	public function add()
 	{
 		if(!session()->has('status')) return redirect()->to(base_url().'login');
-		return view('akun/add');
+		return view('admin/user/add');
 	}
 }

@@ -44,6 +44,6 @@ class Jenis extends BaseController
 	public function add()
 	{
 		if(!session()->has('status')) return redirect()->to(base_url().'login');
-		return view('jenis/add');
+		return view('admin/jenis/add');
 	}
 }

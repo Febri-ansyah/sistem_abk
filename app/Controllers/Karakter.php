@@ -44,6 +44,6 @@ class Karakter extends BaseController
 	public function add()
 	{
 		if(!session()->has('status')) return redirect()->to(base_url().'login');
-		return view('karakter/add');
+		return view('admin/karakter/add');
 	}
 }
