@@ -56,9 +56,9 @@
 						<div class="mb-3 row">
 							<label for="inputPassword" class="col-sm-2 col-form-label">Level User</label>
 							<div class="col-sm-10">
-								<select class="form-select" aria-label="User Level" name="level_user" value="<?= $user['level_user'];?>">
-								  <option value="1">Administrators</option>
-								  <option value="2">Guest</option>
+								<select class="form-select" aria-label="User Level" name="level_user">
+								  <option value="1" <?= ($user['level_user']=='1')?'selected':'';?>>Administrators</option>
+								  <option value="2"<?= ($user['level_user']=='2')?'selected':'';?>>Guest</option>
 								</select>
 							</div>
 						</div>

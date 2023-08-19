@@ -7,6 +7,8 @@ class Admin extends BaseController
 	public function karakter()
 	{
 		if(!session()->has('status')) return redirect()->to(base_url().'login');
+		if(session()->get('level')!=='1') return redirect()->to(base_url());
+
 		$data = [
 			'title' => 'karakter',
 			'karakter' => $this->KarakterModel->getData()
@@ -18,6 +20,8 @@ class Admin extends BaseController
 	public function jenis()
 	{
 		if(!session()->has('status')) return redirect()->to(base_url().'login');
+		if(session()->get('level')!=='1') return redirect()->to(base_url());
+
 		$data = [
 			'title' => 'Jenis',
 			'jenis' => $this->JenisModel->getData()
@@ -29,6 +33,8 @@ class Admin extends BaseController
 	public function akun()
 	{
 		if(!session()->has('status')) return redirect()->to(base_url().'login');
+		if(session()->get('level')!=='1') return redirect()->to(base_url());
+
 		$data = [
 			'title' => 'User',
 			'user' => $this->UserModel->getData()

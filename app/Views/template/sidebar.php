@@ -1,3 +1,5 @@
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
 	<!-- Navbar -->
 	<nav class="main-header navbar navbar-expand navbar-white navbar-light">
 		<!-- Left navbar links -->
@@ -10,7 +12,7 @@
 		<ul class="navbar-nav ml-auto">
       <li class="nav-item mr-2">
       	<a class="nav-link" href='<?= base_url();?>login'>
-      		<i class="fa-solid fa-arrow-right-to-bracket" style="margin-top: 0.1px;"></i>
+      		<i class="fa-solid fa-right-to-bracket" style="margin-top: 0.1px;"></i>
       		Login
       	</a>
       </li>
@@ -59,7 +61,7 @@
 						</a>
 					</li>
 
-					<?php if(session()->has('level')): ?>
+					<?php if(session()->get('level')=='1'): ?>
 					<!-- for admin -->
 					<li class="nav-header">MENU ADMIN</li>				
 					<li class="nav-item">
@@ -88,9 +90,40 @@
 					</li>
 					<!-- /endAdmin -->
 					<?php endif; ?>
+
+					<?php if(session()->get('level')=='2'): ?>
+					<!-- for user -->
+					<li class="nav-header">MENU USER</li>				
+					<li class="nav-item">
+						<a href="<?= base_url();?>konsultasi" class="nav-link">
+							<i class="nav-icon far fa-user"></i>
+							<p>
+								Konsultasi
+							</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="<?= base_url();?>cetak" class="nav-link">
+							<i class="nav-icon far fa-user"></i>
+							<p>
+								Cetak Diagnosa
+							</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="<?= base_url();?>riwayat" class="nav-link">
+							<i class="nav-icon far fa-user"></i>
+							<p>
+								Riwayat Konsultasi
+							</p>
+						</a>
+					</li>
+					<!-- /endUser -->
+					<?php endif; ?>
 				</ul>				
 			</nav>
 			<!-- /.sidebar-menu -->
 		</div>
 		<!-- /.sidebar -->
 	</aside>
+</div>
