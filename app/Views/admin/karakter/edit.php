@@ -25,6 +25,7 @@
 	<!-- Main content -->
 	<form action="<?= base_url();?>karakter/save" method="POST">
 		<?= csrf_field();?>
+		<input type="text" name="id_karakter" value="<?= $karakter['id_karakter'];?>" style='visibility: hidden;' readonly>
 		<section class="content bg-light">
 			<div class="container">
 				<!-- Main row -->

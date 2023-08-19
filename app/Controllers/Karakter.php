@@ -9,11 +9,12 @@ class Karakter extends BaseController
 		if($this->request->getVar()==[]) return redirect()->to(base_url().'Admin/Karakter');
 
 		$data = [
+			'id_karakter' => $this->request->getVar('id_karakter'),
 			'gejala_karakter' => $this->request->getVar('gejala_karakter'),
 			'karakteristik_karakter' => $this->request->getVar('karakteristik_karakter')
 		];
 
-		($this->KarakterModel->getData($data['gejala_karakter'])) ? 
+		($this->KarakterModel->getData($data['gejala_karakter'])!==null) ? 
 			$this->KarakterModel->save($data) :
 			$this->KarakterModel->insert($data);
 
@@ -23,7 +24,7 @@ class Karakter extends BaseController
 
 	public function delete($id)
 	{
-		$this->KarakterModel->delete(['gejala_karakter'=>$id]);
+		$this->KarakterModel->where(['gejala_karakter'=>$id])->delete();
 
 		session()->setFlashdata('pesan', ' Data Berhasil Dihapus');
 		return redirect()->to(base_url().'Admin/Karakter');

@@ -12,6 +12,7 @@ class Admin extends BaseController
 		$currentPage = $this->request->getVar('page_karakter') ? 
 						$this->request->getVar('page_karakter') : '1';
 		$jumlahData='5';
+		
 		$data = [
 			'title' => 'karakter',
 			'karakter' => $this->KarakterModel->paginate($jumlahData, 'karakter'),
