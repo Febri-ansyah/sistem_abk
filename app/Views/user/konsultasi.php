@@ -22,10 +22,11 @@
 	<!-- /.content-header -->
 
 	<!--  -->
-	<form class="content bg-light">
+	<form class="content bg-light" method="POST" action="konsultasi/save">
 		<div class="container">
-			<?php foreach($karakter as $k): ?>
-			<div class="card active">
+
+			<?php foreach($karakter as $k):?>
+			<div class="card" id="<?= $k['gejala_karakter'];?>">
 			  <div class="card-header">
 				Apakah anak <?= strtolower($k['karakteristik_karakter']);?> ?
 			  </div>
@@ -40,8 +41,7 @@
 					</div>
 			  </div>
 			</div>
-
-			<?php endForeach; ?>
+			<?php endforeach; ?>
 			<input class="btn btn-dark" type="submit" role="button" value="Simpan">
 		</div>
 	</form>
@@ -49,11 +49,4 @@
 </div>
 <!-- ./wrapper -->
 
-
-<style>
-	.card.inactive{
-		opacity: 0;
-		pointer-events: none;
-	}
-</style>
 <?= $this->endSection();?>

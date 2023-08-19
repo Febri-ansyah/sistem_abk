@@ -9,9 +9,16 @@ class Admin extends BaseController
 		if(!session()->has('status')) return redirect()->to(base_url().'login');
 		if(session()->get('level')!=='1') return redirect()->to(base_url());
 
+		$currentPage = $this->request->getVar('page_karakter') ? 
+						$this->request->getVar('page_karakter') : '1';
+		$jumlahData='5';
 		$data = [
 			'title' => 'karakter',
-			'karakter' => $this->KarakterModel->getData()
+			'karakter' => $this->KarakterModel->paginate($jumlahData, 'karakter'),
+			'pager' => $this->KarakterModel->pager,
+			'currentPage' => $currentPage,
+			'jumlahData' => $jumlahData
+
 		];
 
 		return view('admin/karakter/view', $data);

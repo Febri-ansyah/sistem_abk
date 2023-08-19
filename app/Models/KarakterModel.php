@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class KarakterModel extends Model
 {
 	protected $table      = 'karakter_abk';
-	protected $primaryKey = 'gejala_karakter';
+	protected $primaryKey = 'id_karakter';
     protected $allowedFields = ['gejala_karakter','karakteristik_karakter'];
 	protected $tempReturnType	= 'array';
 

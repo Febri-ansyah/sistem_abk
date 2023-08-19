@@ -48,10 +48,10 @@
 							</tr>
 						</thead>
 						<tbody>
-							<?php $i=0; ?>
+							<?php $i=1+($jumlahData*($currentPage-1)); ?>
 							<?php foreach ($karakter as $k):?>
 							<tr>
-								<th scope="row"><?= ++$i;?></th>
+								<th scope="row"><?= $i++;?></th>
 								<td><?= $k['gejala_karakter'];?></td>
 								<td><?= $k['karakteristik_karakter'];?></td>
 								<td>
@@ -66,6 +66,12 @@
 							<?php endForeach; ?>
 						</tbody>
 					</table>
+					<nav aria-label="Page navigation example">
+					  <ul class="pagination">
+					  	<?= $pager->Links('karakter','karakter_pagination') ?>
+					  </ul>
+					</nav>
+						
 				</div>
 			</div>
 			<!-- /.row (main row) -->
