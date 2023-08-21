@@ -1,6 +1,9 @@
 <?= $this->extend('template/main');?>
 
 <?= $this->section('content');?>  
+<?php 
+	$token = bin2hex(random_bytes(5));
+ ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
 	<!-- Content Header (Page header) -->
@@ -24,11 +27,11 @@
 	<!--  -->
 	<form class="content bg-light" method="POST" action="konsultasi/save">
 		<div class="container">
-
-			<?php foreach($karakter as $k):?>
+			<input type="text" name="token" value="<?= $token;?>" style="visibility: hidden;">
+			<?php $i=0; foreach($karakter as $k):?>
 			<div class="card" id="<?= $k['gejala_karakter'];?>">
 			  <div class="card-header">
-				Apakah anak <?= strtolower($k['karakteristik_karakter']);?> ?
+				<b><?= ++$i;?>.</b> Apakah anak <?= strtolower($k['karakteristik_karakter']);?> ?
 			  </div>
 			  <div class="card-body">
 					<div class="form-check form-check-inline">
