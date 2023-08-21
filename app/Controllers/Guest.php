@@ -61,7 +61,7 @@ class Guest extends BaseController
 	public function delete($id)
 	{
 		if(session()->get('level')!=='2') return redirect()->to(base_url());
-		$this -> db -> query('DELETE FROM daftar_riwayat_konsultasi WHERE daftar_riwayat_konsultasi.id_konsultasi LIKE "'.$id.'"');
+		$this -> db -> query('DELETE FROM konsultasi_abk WHERE konsultasi_abk.id_konsultasi LIKE "'.$id.'"');
 
 		session()->setFlashdata('pesan', ' Data Berhasil Dihapus');
 		return redirect()->to(base_url().'riwayat');	
@@ -72,7 +72,7 @@ class Guest extends BaseController
 		// dd($id);
 		$data = $this->db->query('SELECT * FROM daftar_riwayat_konsultasi WHERE daftar_riwayat_konsultasi.id_konsultasi LIKE "'.$id.'"')->getResultArray();
 		
-		// header('Content-Type: application/pdf'); 
+		header('Content-Type: application/pdf'); 
 		ob_clean();
 		$mpdf = new \Mpdf\Mpdf();
 		$html='
@@ -119,7 +119,7 @@ class Guest extends BaseController
 			';
 		$mpdf->WriteHTML($html);
 
-		$mpdf->Output();
+		$mpdf->Output('Data Riwayat Konsultasi.pdf','I');
 		die;
 	} 
 		
