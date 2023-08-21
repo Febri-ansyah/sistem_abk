@@ -53,8 +53,9 @@ $routes->get('/edit/jenis/(:any)', 'jenis::edit/$1');
 $routes->get('/edit/akun/(:any)', 'user::edit/$1');
 
 $routes->get('/konsultasi', 'guest::konsultasi');
-$routes->get('/cetak', 'guest::cetak');
+$routes->get('/hasil', 'guest::hasil');
 $routes->get('/history', 'guest::history');
+$routes->get('/hasil/cetak', 'guest::cetak');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -103,7 +103,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="<?= base_url();?>cetak" class="nav-link">
+						<a href="<?= base_url();?>hasil" class="nav-link">
 							<i class="nav-icon far fa-user"></i>
 							<p>
 								Cetak Diagnosa

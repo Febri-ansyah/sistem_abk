@@ -25,7 +25,6 @@
 	<!-- Main content -->
 	<form action="<?= base_url();?>user/save" method="POST">
 		<?= csrf_field();?>
-		<input type="text" name="id_user" readonly value="<?= $user['id_user'];?>" style="visibility: hidden;">
 		<section class="content bg-light">
 			<div class="container">
 				<!-- Main row -->

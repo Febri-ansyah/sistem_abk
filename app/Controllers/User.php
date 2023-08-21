@@ -10,14 +10,12 @@ class User extends BaseController
 		if($this->request->getVar()==[]) return redirect()->to(base_url().'admin/user');
 		
 		$data = [
-			'id_user' => $this->request->getVar('id_user'),
 			'nama_user' => $this->request->getVar('nama_user'),
 			'email_user' => $this->request->getVar('email_user'),
 			'password_user' => $this->request->getVar('password_user'),
 			'level_user' => $this->request->getVar('level_user')
 		];
-
-		if($this -> UserModel -> getData($data['id_user'])) {
+		if($this -> UserModel -> getData($data['nama_user'])) {
 			$data['password_user'] = password_hash($data['password_user'], PASSWORD_DEFAULT);
 			$this -> UserModel -> save($data);
 
@@ -25,14 +23,16 @@ class User extends BaseController
 			return redirect()->to(base_url().'admin/akun');
 		}
 
-		if (($this->UserModel->where('nama_user', $data['nama_user'])->first())!== null) {
+		if ($this -> UserModel -> getData($data['nama_user'])!== null) {
 			session()->setFlashdata('pesan', ' Nama: '.$data['nama_user'].' sudah digunakan');
 			return redirect()->to(base_url().'admin/akun');
 		}
-		
-		if($data['password_user']!=$this->request->getVar('repassword_user')){
-			session()->setFlashdata('pesan', ' Password tidak sesuai digunakan');
-			return redirect()->to(base_url().'admin/akun');
+
+		if ($this->request->getVar('repassword_user')!==null) {
+			if($data['password_user']!=$this->request->getVar('repassword_user')){
+				session()->setFlashdata('pesan', ' Password tidak sesuai digunakan');
+				return redirect()->to(base_url().'admin/akun');
+			}
 		}
 
 		$data['password_user'] = password_hash($data['password_user'], PASSWORD_DEFAULT);
@@ -44,8 +44,8 @@ class User extends BaseController
 
 	public function delete($id)
 	{
-
-		$this -> UserModel -> delete(['id_user'=>$id]);
+		if(session()->get('level')!=='1') return redirect()->to(base_url());
+		$this -> UserModel -> delete(['nama_user'=>$id]);
 
 		session()->setFlashdata('pesan', ' Data Berhasil Dihapus');
 		return redirect()->to(base_url().'admin/akun');

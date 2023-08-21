@@ -41,17 +41,16 @@
 					<table class="table table-stripped table-hover">
 						<thead>
 							<tr>
-								<th scope="col">#</th>
 								<th scope="col">Gejala</th>
 								<th scope="col">Karakteristik</th>
 								<th scope="col">Action</th>
 							</tr>
 						</thead>
 						<tbody>
-							<?php $i=1+($jumlahData*($currentPage-1)); ?>
+							<!-- </?php $i=1+($jumlahData*($currentPage-1)); ?> -->
 							<?php foreach ($karakter as $k):?>
 							<tr>
-								<th scope="row"><?= $i++;?></th>
+								<!-- <th scope="row"></?= $i++;?></th> -->
 								<td><?= $k['gejala_karakter'];?></td>
 								<td><?= $k['karakteristik_karakter'];?></td>
 								<td>

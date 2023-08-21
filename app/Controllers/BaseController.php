@@ -57,5 +57,6 @@ abstract class BaseController extends Controller
         $this->KarakterModel = new \App\Models\KarakterModel();
         $this->JenisModel = new \App\Models\JenisModel();
         $this->UserModel = new \App\Models\UserModel();
+        $this->KonsultasiModel = new \App\Models\KonsultasiModel();
     }
 }

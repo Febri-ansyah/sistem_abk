@@ -24,7 +24,7 @@ class Jenis extends BaseController
 
 	public function delete($id)
 	{
-
+		if(session()->get('level')!=='1') return redirect()->to(base_url());
 		$this->JenisModel->delete(['kode_jenis'=>$id]);
 
 		session()->setFlashdata('pesan', ' Data Berhasil Dihapus');

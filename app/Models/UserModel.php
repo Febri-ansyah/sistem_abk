@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class UserModel extends Model
 {
 	protected $table      = 'users_abk';
-	protected $primaryKey = 'id_user';
+	protected $primaryKey = 'nama_user';
     protected $allowedFields = ['nama_user','password_user','email_user','level_user'];
 	protected $tempReturnType	= 'array';
 
@@ -16,6 +16,6 @@ class UserModel extends Model
 		if($data == false)
 			return $this -> findAll();
 
-		return $this->where(['id_user' => $data])->first();
+		return $this->where(['nama_user' => $data])->first();
 	}
 }

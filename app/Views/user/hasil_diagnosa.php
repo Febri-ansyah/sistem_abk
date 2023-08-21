@@ -39,7 +39,7 @@
 			</div>
 			<div style="width:100%; display:flex; justify-content:center;">
 				<a class="btn btn-dark mx-3" href="#" role="button">Konsultasi Ulang</a>
-				<a class="btn btn-primary mx-3" href="<?= base_url();?>cetak" role="button">Cetak</a>
+				<a class="btn btn-primary mx-3" href="<?= base_url();?>hasil/cetak" role="button" target="_blank">Cetak</a>
 			</div>
 		</div>
 	</section>

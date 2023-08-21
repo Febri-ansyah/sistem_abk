@@ -41,7 +41,7 @@
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col">User ID</th>
+									<th scope="col">Nama</th>
 									<th scope="col">Email</th>
 									<th scope="col">Level</th>
 									<th scope="col">Action</th>
@@ -61,10 +61,10 @@
 										<td>Guest</td>
 									<?php endif ?>
 									<td>
-										<a class="mr-2" href="<?= base_url();?>edit/akun/<?= $u['id_user'];?>" role="button">
+										<a class="mr-2" href="<?= base_url();?>edit/akun/<?= $u['nama_user'];?>" role="button">
 											<i class="fa-solid fa-pencil fa-lg" style="color: #212529;"></i>
 										</a>
-										<a class="ml-2" href="<?= base_url();?>delete/akun/<?= $u['id_user'];?>" role="button">
+										<a class="ml-2" href="<?= base_url();?>delete/akun/<?= $u['nama_user'];?>" role="button">
 											<i class="fa-solid fa-trash fa-lg" style="color: #212529;"></i>
 										</a>
 									</td>

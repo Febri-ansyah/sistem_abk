@@ -24,6 +24,8 @@ class Karakter extends BaseController
 
 	public function delete($id)
 	{
+		if(session()->get('level')!=='1') return redirect()->to(base_url());
+		
 		$this->KarakterModel->where(['gejala_karakter'=>$id])->delete();
 
 		session()->setFlashdata('pesan', ' Data Berhasil Dihapus');
