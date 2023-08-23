@@ -11,7 +11,8 @@ class Jenis extends BaseController
 
 		$data = [
 			'kode_jenis' => $this->request->getVar('kode_jenis'),
-			'nama_jenis' => $this->request->getVar('nama_jenis')
+			'nama_jenis' => $this->request->getVar('nama_jenis'),
+			'solusi_jenis' => $this->request->getVar('solusi_jenis')
 		];
 
 		($this->JenisModel->getData($data['kode_jenis'])) ? 

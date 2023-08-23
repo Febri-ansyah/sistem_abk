@@ -46,6 +46,12 @@
 									<input type="text" class="form-control" name="nama_jenis" value="<?= $jenis['nama_jenis'];?>">
 								</div>
 							</div>
+							<div class="mb-3 row">
+								<label for="inputPassword" class="col-sm-2 col-form-label">Solusi Jenis</label>
+								<div class="col-sm-10">
+									<input autocomplete="off" type="text" class="form-control" name="solusi_jenis" value="<?= $jenis['solusi_jenis'];?>">
+								</div>
+							</div>
 
 					</div>
 				</div>

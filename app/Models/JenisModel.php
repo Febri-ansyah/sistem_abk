@@ -8,7 +8,7 @@ class JenisModel extends Model
 {
 	protected $table      = 'jenis_abk';
 	protected $primaryKey = 'kode_jenis';
-    protected $allowedFields = ['kode_jenis','nama_jenis'];
+    protected $allowedFields = ['kode_jenis','nama_jenis','solusi_jenis'];
 	protected $tempReturnType	= 'array';
 
 	public function getData($data = false)

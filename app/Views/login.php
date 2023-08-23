@@ -17,7 +17,7 @@
 
 			<form action="<?= base_url();?>login/check" method="POST">
 				<div class="input-group mb-3">
-					<input type="text" class="form-control" name="nama_user" placeholder="Masukan Nama Anda">
+					<input type="text" class="form-control" name="nama_user" placeholder="Masukan Nama Anda" autocomplete="off">
 					<div class="input-group-append">
 						<div class="input-group-text">
 							<span class="fas fa-user"></span>

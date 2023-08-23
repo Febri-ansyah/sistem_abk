@@ -54,9 +54,8 @@ $routes->get('/edit/akun/(:any)', 'user::edit/$1');
 
 $routes->get('/konsultasi', 'guest::konsultasi');
 $routes->get('/hasil', 'guest::hasil');
-$routes->get('/hasil/print/(:any)', 'guest::cetak/$1');
+$routes->get('/hasil/cetak/(:any)', 'guest::cetak/$1');
 $routes->get('/riwayat', 'guest::riwayat');
-$routes->get('/riwayat/cetak/(:any)', 'guest::cetak/$1');
 $routes->get('/riwayat/delete/(:any)', 'guest::delete/$1');
 /*
  * --------------------------------------------------------------------

@@ -43,10 +43,10 @@
 				<?php endIf; ?>
 			</div>
 			<div style="width:100%; display:flex; justify-content:center;">
-				<a class="btn btn-dark mx-3" href="#" role="button">Mulai Konsultasi Baru</a>
-				<?php if(session()->get('id_konsultasi')!==null || $daftar!==null) :?>
-				<a class="btn btn-primary mx-3" href="<?= base_url();?>hasil/cetak/<?= $d['id_konsultasi'];?>" role="button" target="_blank">Cetak</a>
-				<?php endIf; ?>
+				<a class="btn btn-dark mx-3" href="<?= base_url();?>konsultasi" role="button">Mulai Konsultasi Baru</a>
+				<?php if(session()->get('id_konsultasi')!==null) :?>
+				<a class="btn btn-primary mx-3" href="<?= base_url();?>hasil/cetak/<?= session()->get('id_konsultasi');?>" role="button" target="_blank">Cetak</a>
+				<?php endif; ?>
 			</div>
 		</div>
 	</section>

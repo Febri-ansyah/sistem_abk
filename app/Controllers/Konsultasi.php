@@ -85,7 +85,7 @@ class Konsultasi extends BaseController
 			$request['G33']=='Y' &&
 			$request['G34']=='Y') {$kode_jenis='ABK6';}
 
-		else{$kode_jenis='0';}
+		else{$kode_jenis='ABK0';}
 
 		// MENCACAH DATA
 		$requests="";

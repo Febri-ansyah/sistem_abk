@@ -51,7 +51,7 @@
 									<td><?= $d['kode_jenis'];?></td>
 									<td><?= $d['nama_jenis'];?></td>
 									<td>
-										<a class="ml-2" href="<?= base_url();?>riwayat/cetak/<?= $d['id_konsultasi'];?>" target="_blank">
+										<a class="ml-2" href="<?= base_url();?>hasil/cetak/<?= $d['id_konsultasi'];?>" target="_blank">
 											<i class="fa-solid fa-print" style="color: #212529;"></i>
 										</a>
 										<a class="ml-2" href="<?= base_url();?>riwayat/delete/<?= $d['id_konsultasi'];?>">

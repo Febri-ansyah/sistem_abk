@@ -123,7 +123,7 @@ abstract class BaseModel
      *
      * @var string
      */
-    protected $updatedField = 'updated_at';
+    protected $updatedField = false;
 
     /**
      * Used by withDeleted to override the

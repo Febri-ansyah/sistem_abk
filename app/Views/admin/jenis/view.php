@@ -44,6 +44,7 @@
 									<th scope="col">#</th>
 									<th scope="col">Kode Jenis</th>
 									<th scope="col">Jenis ABK</th>
+									<th scope="col">Solusi</th>
 									<th scope="col">Action</th>
 								</tr>
 							</thead>
@@ -54,6 +55,7 @@
 									<th scope="row"><?= ++$i;?></th>
 									<td><?= $j['kode_jenis'];?></td>
 									<td><?= $j['nama_jenis'];?></td>
+									<td><?= $j['solusi_jenis'];?></td>
 									<td>
 										<a class="mr-2" href="<?= base_url();?>edit/jenis/<?= $j['kode_jenis'];?>" role="button">
 											<i class="fa-solid fa-pencil fa-lg" style="color: #212529;"></i>
