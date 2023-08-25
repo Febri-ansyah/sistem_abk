@@ -27,7 +27,7 @@
 				<h1 class="display-5"><b>Sistem Pakar Diagnosa Karakteristik ABK</b></h1>
 				<hr class="mt-4">
 				<p>Selamat datang di Sistem Pakar Diagnosa Karakteristik ABK. Sistem ini bertujuan untuk memudahkan anak anak konsultasi dan memberikan solusi dalam menangani.</p>
-				<a class="btn btn-light btn-md mt-3" href="#" role="button">Konsultasi Sekarang</a>
+				<a class="btn btn-light btn-md mt-3" href="<?= base_url();?>konsultasi" role="button">Konsultasi Sekarang</a>
 			</div>
 			<div class="container bg-light">
 				<div class="card">
