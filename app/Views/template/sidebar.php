@@ -127,3 +127,18 @@
 		<!-- /.sidebar -->
 	</aside>
 </div>
+
+<script type="text/javascript">
+	window.addEventListener('load', ()=>{
+
+	});
+	
+	let links = document.querySelectorAll('div.sidebar li a');
+	let linkCurrent = window.location.href;
+
+	links.forEach((e,i)=>{
+		if(e==linkCurrent)
+			e.classList.add('active');
+	});
+	
+</script>
